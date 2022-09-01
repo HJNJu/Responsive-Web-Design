@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  background-color: #eeeeee;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+}
+
+#header-img {
+  display: flex;
+  width: 16rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+#nav-bar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  align-items: center;
+}
+
+#nav-bar li {
+  float: left;
+}
+
+#nav-bar li a {
+  display: block;
+  color: black;
+  margin: 1.5rem;
+}
+
+#nav-bar li a:hover {
+  color: #5995ff;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#content {
+  max-width: 960px;
+  margin: 2rem auto 0;
+  overflow: hidden;
+}
+
+.contact-box {
+  margin: 1.5rem;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.contact-box h1 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.contact-box #email {
+  display: blcok;
+  margin: auto;
+  width: 30%;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: fixed;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: #f1c40f;
+  border: none;
+}
+
+#submit {
+  display: block;
+  padding: 0.3rem 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+#Features {
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: inline-block;
+  flex-direction: column;
+}
+
+.icon {
+  float: left;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.fire {
+  margin-right: 3.5rem;
+}
+
+#Features .feature div {
+  padding: 1rem;
+  margin-left: 3rem;
+}
+
+#Features .feature div h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+#How_It_Works #video {
+  width: 600px;
+  height: 340px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+#Pricing {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 3rem 0.2rem;
+}
+
+.price-box {
+  border: solid #333 3px;
+  width: 20rem;
+  height: 21rem;
+  text-align: center;
+}
+
+.price-box:first-child {
+  margin-right: 1.2rem;
+}
+
+.price-box:last-child {
+  margin-left: 1.2rem;
+}
+
+.price-box h3 {
+  background-color: #ddd;
+  font-size: 1.05rem;
+  padding: 1rem;
+}
+
+.price-box h2 {
+  padding: 1rem;
+}
+
+.price-box p {
+  padding: 0 4rem 1rem;
+}
+
+.price-box .btn {
+  display: inline-block;
+  margin: 1rem;
+}
+
+footer {
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+footer ul li a {
+  color:#333;
+  padding: 0.5rem 1rem;
+}
+
+footer span {
+  text-decoration: underline;
+  color: #333;
+}
+
+@media only screen and (max-width:800px) {
+  #nav-bar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+
+  #nav-bar ul li {
+    padding: 1rem 1rem;
+  }
+
+  #content {
+    margin: 8rem auto 0;
+    overflow: hidden;
+  }
+
+  .contact-box #email {
+    display: blcok;
+    margin: auto;
+    width: 50%;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+  }
+
+  #Features .feature {
+    flex-direction: column;
+  }
+  
+  #Features .feature div {
+    padding: 1rem;
+    margin: 0.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #How_It_Works #video {
+    width: 80%;
+    height: 300px;
+  }
+
+  #Pricing .price-box {
+    margin: 1rem;
+  }
+
+  .price-box:first-child {
+    margin-right: 0;
+  }
+
+  .price-box:last-child {
+    margin-left: 0;
+  }
+
+  footer {
+    padding: 2.5rem 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
